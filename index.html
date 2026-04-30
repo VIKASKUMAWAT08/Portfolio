@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <style>
+        main {
+            max-width: 1020px;
+            margin: 0 auto;
+        }
+
+        .mylogo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        #abouthobby {
+            background-color: #222;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .inner-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .inner-nav a {
+            text-decoration: none;
+            color: gold;
+            font-size: 22px;
+
+        }
+
+        .my-cards {
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #222;
+        }
+
+        .my-cards .card {
+            background-color: gold;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            color: gold;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+
+        section {
+            background-color: #222;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 60%;
+            gap: 10px;
+            background-color: gold;
+            color: black;
+        }
+
+        #myform {
+            margin-right:20px;
+            height: 260px;
+            margin-top: 50px;
+            border-radius: 10px;
+            
+
+        }
+         .submit:hover{
+            background-color: blue;
+            color: white;
+        }
+
+        .my-cards {
+            display: flex;
+        }
+
+        .form-outer {
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #222;
+        }
+
+        .my-details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top:50px;
+            margin-left: 20px;
+            background-color: gold;
+            width: 400px;
+            color: black;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        @media (max-width:768px) {
+            .my-cards {
+                flex-direction: column;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .form-outer {
+                flex-direction: column;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <img class="mylogo" src="img.video/vikasdp.jpg" alt="my logo">
+            <div class="inner-nav">
+                <a href="#aboutme" target="_blank"> <b>Home</b></a>
+                <a href="#abouthobby" target="_blank"><b>Hobby</b></a>
+                <a href="#myform" target="_blank"><b>Contact Me.</b></a>
+            </div>
+        </nav>
+        <section id="aboutme">
+            <h1>AboutMe</h1>
+            <div class="my-cards">
+                <div class="card">
+                    <h1>My name is vikas. </h1>
+                    <h2> I'm from jaipur. </h2>
+                    <h4> I'm fullstack developer.</h4>
+                </div>
+                <div class="card">
+                    <h3>I Love to play Cricket</h3>
+                    <p>Batting in cricket is my favorite part of the game, where focus, timing, and confidence are very
+                        important.
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="abouthobby">
+            <h1>My Progress</h1>
+            <div class="my-cards">
+                <div class="card">
+                    <label>My HTML progress </label>
+                    <progress value="85" max="100"></progress>
+                </div>
+                <div class="card">
+                    <label>My Course progress </label>
+                    <meter value="7" min="3" max="10" low="4" high="7"></meter>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="Contact">
+            <h1>Contact Us.</h1>
+            <div class="form-outer">
+                <div class="my-details">
+                    <h3> MyEmail:</h3>
+                    <p>vkvikas0555@gmail.com</p>
+                    <h3>Phone:</h3>
+                    <p>8109563254</p>
+                </div>
+                <form id="myform">
+                    <input id="name" type="text" name="" placeholder="your name">
+                    <input id="email" type="email" name="email" placeholder="your email">
+                    <select>
+                        <option>1st year</option>
+                        <option>2nd year</option>
+                        <option>3rd year</option>
+                    </select>
+                    <input list="browsers" id="mylist" placeholder="select or type....">
+                    <datalist id="browsers">
+                        <option>1st year</option>
+                        <option>2nd year</option>
+                        <option>3rd year</option>
+                    </datalist>
+                    <input type="date" name="date">
+                    <textarea id="textArea" rows="4" placeholder="your massage"></textarea>
+                    <button class="submit"> <b>Submit</b></button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <details>
+                <summary>I have a secret</summary>
+                <p>I can solve the rubik's cube in a minute</p>
+            </details>
+        </section>
+        <section>
+            <input type="color" name="color">
+            <br>
+            <input type="date" name="date">
+            <br>
+            <input type="range" value="70" max="100">
+        </section>
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Student Name</th>
+                        <th>Student Class</th>
+                        <th>Hobby</th>
+                        <th>Progress</th>
+                        <th>Student Record</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>vikas</td>
+                        <td>BCA 3rd year</td>
+                        <td>Football</td>
+                        <td><progress value="85" max="100"></progress></td>
+                        <td><meter value="7" min="3" max="10" low="4" high="7"></meter></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Arvind</td>
+                        <td>BCA 3rd year</td>
+                        <td>Cricket</td>
+                        <td><progress value="70" max="100"></progress></td>
+                        <td><meter value="8" min="3" max="10" low="4" high="7"></meter></td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <section>
+            <audio controls loop>
+                <source src="/img.video/Amplifier___Slowed___reverb___Lofi_Song(128k).m4a" type="audio/mpeg">
+            </audio>
+        </section>
+        <section>
+            <video controls loop style="height: 400px; width: 300px;">
+                <source src="/img.video/video_20260304_152314.mp4" type="video/mp4">
+            </video>
+        </section>
+
+
+    </main>
+
+    
+
+    <script>
+        let myform = document.getElementById("myform");
+
+        myform.addEventListener("submit", function (event) {
+
+            let myName = document.getElementById("name");
+            let myEmail = document.getElementById("email");
+            let myTextArea = document.getElementById("textArea");
+            let nameValue = myName.value;
+            let emailValue = myEmail.value;
+            let textareaValue = myTextArea.value;
+
+            if(nameValue==="" || emailValue==="" || textareaValue===""){
+                alert("Enter values first");
+            }
+            else{
+                alert("success!!");
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
